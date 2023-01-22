@@ -13,16 +13,16 @@ fn main() {
     io::stdin().read_line(&mut value2).expect("Failed to read line");
 
     //Type casting
-    let number1: i64 = value1.trim().parse().unwrap();
-    let number2: i64 = value2.trim().parse().unwrap();
+    let number1: i128 = value1.trim().parse().unwrap();
+    let number2: i128 = value2.trim().parse().unwrap();
 
     //Operation input
-    println!("Input the operation of your choice (+/-/*/:)");
+    println!("Input the operation of your choice (+/-/*/:/^)");
     let mut operation = String::new();
     io::stdin().read_line(&mut operation).expect("Failed to read line");
 
     //Result calculation
-    let outcome: i64;
+    let outcome: i128;
     if operation.trim() == "+"{
         outcome = number1 + number2;
     }
@@ -34,6 +34,9 @@ fn main() {
     }
     else if operation.trim() == "/" || operation.trim() == ":" {
         outcome = number1 / number2;
+    }
+    else if operation.trim() == "^"{
+        outcome = number1.pow(number2 as u32);
     }
     else{
         println!("Invalid operation");
