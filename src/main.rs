@@ -4,9 +4,9 @@ use std::process;
 
 fn main() {
     //Variables declarations
-    let mut value1;
-    let mut value2;
-    let mut operation;
+    let mut value1: String;
+    let mut value2: String;
+    let mut operation: String;
     let mut number1: f64;
     let mut number2: f64;
     let mut outcome: f64;
