@@ -69,6 +69,6 @@ fn main() {
         }
 
         //Result printout
-        println!("{}", outcome);
+        println!("Result:{}", outcome);
     }
 }
