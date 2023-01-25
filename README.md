@@ -7,6 +7,5 @@ Supported operations:
 - Exponentation
 
 Maximum values:
-- The values inputed by the user -> i128
-  - The second value in case of exponentation -> u32
-- The result -> i128
+- The values inputed by the user -> f64
+- The result -> f64
