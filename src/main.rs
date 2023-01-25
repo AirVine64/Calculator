@@ -7,9 +7,9 @@ fn main() {
     let mut value1;
     let mut value2;
     let mut operation;
-    let mut number1: i128;
-    let mut number2: i128;
-    let mut outcome: i128;
+    let mut number1: f64;
+    let mut number2: f64;
+    let mut outcome: f64;
 
     //Main program loop
     loop {
@@ -60,7 +60,7 @@ fn main() {
                 break;
             }
             else if operation.trim() == "^"{
-                outcome = number1.pow(number2 as u32);
+                outcome = number1.powf(number2);
                 break;
             }
             else{
